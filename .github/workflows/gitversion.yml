@@ -22,4 +22,10 @@ jobs:
 
       - name: Determine Version
         uses: gittools/actions/gitversion/execute@v4.1.0
+
+      - name: Set up git-cliff
+        uses: kenji-miyake/setup-git-cliff@v1
+
+      - name: Run git-cliff
+        run: git cliff
     
